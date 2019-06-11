@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	int n,i;
+	int n,i,flag=0;
 	scanf("%d",&n);
 	int a[n];
 	int b[n];
@@ -15,8 +15,11 @@ int main()
 	for(i=0;i<n;i++)
 	{
 		if(b[i]>1)
-		printf("%d ",i);
+		{printf("%d ",i);
+		flag=1;}
 	}
+	if(flag==0)
+	printf("unique");
 	
 	
 }
